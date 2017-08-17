@@ -5,11 +5,8 @@ phases:
     commands:
       - echo Installing stuff
       - npm install -g mocha
-    pre_build:
-      commands: 
-        - echo Installing deps
-        - npm install
   build:
     commands:
       - echo Build started on `date`
+      - npm install
       - mocha 
