@@ -12,4 +12,4 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - npm run tests  
+      - mocha 
