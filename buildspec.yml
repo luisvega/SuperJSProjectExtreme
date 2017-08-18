@@ -10,3 +10,14 @@ phases:
       - echo Build started on `date`
       - npm install
       - mocha 
+  post_build:
+    commands:
+      - echo Build _completed_
+artificats:
+  files:
+    - app.js
+    - bin/*
+    - node_modules/**/*
+    - package.json
+    - routes/**/*
+    - test/**/*
