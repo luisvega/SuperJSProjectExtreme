@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - echo Build _completed_
-artifcats:
+artifacts:
   files:
     - app.js
     - bin/*
