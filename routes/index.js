@@ -11,6 +11,6 @@ router.get('/epoch', function(req, res, next) {
 })
 
 router.get('/msg', function(req, res, next) {
-  res.status(200).json({ message: 'meh' })
+  res.status(201).json({ message: 'meh' })
 })
 module.exports = router;
