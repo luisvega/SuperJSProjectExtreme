@@ -20,7 +20,7 @@ describe('it lives', function(){
     chai.request(server)
       .get('/msg')
       .end((err, res) => {
-        res.should.have.status(200)
+        res.should.have.status(201)
         done()
       })
   })
