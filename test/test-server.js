@@ -16,7 +16,7 @@ describe('it lives', function(){
         done()
       })
   })
-  it('should say a message', done => {
+  it('should say something like a message', done => {
     chai.request(server)
       .get('/msg')
       .end((err, res) => {
