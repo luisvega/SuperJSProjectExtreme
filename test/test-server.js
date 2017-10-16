@@ -16,4 +16,12 @@ describe('it lives', function(){
         done()
       })
   })
+  it('should say something like a message', done => {
+    chai.request(server)
+      .get('/msg')
+      .end((err, res) => {
+        res.should.have.status(201)
+        done()
+      })
+  })
 })
