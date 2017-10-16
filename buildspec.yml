@@ -4,12 +4,11 @@ phases:
   install:
     commands:
       - echo Installing stuff
-      - npm install -g mocha
   build:
     commands:
       - echo Build started on `date`
       - npm install
-      - mocha 
+      - ./node_modules/.bin/mocha --exit
   post_build:
     commands:
       - echo Build _completed_
