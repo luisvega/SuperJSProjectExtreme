@@ -10,7 +10,6 @@ phases:
       - echo Build started on `date`
       - npm install
       - mocha 
-      - echo $?
   post_build:
     commands:
       - echo Build _completed_
