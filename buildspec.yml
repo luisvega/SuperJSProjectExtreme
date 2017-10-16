@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - echo Installing stuff
+      - echo this is the branch
   build:
     commands:
       - echo Build started on `date`
